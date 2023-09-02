@@ -1,9 +1,9 @@
 #!/bin/bash
 
 teleport version
-read -p "Update teleport? y/n" teleupdate
+read -p "Upgrade teleport? y/n" teleupdate
 
-if [ "$teleupgrade" = "y" ]; then
+if [ "$teleupdate" = "y" ]; then
   echo "Upgrading teleport binary..."
   curl https://goteleport.com/static/install.sh | bash -s 13.3.7
 fi
