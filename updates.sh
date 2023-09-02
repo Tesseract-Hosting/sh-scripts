@@ -1,13 +1,15 @@
 # curl https://raw.githubusercontent.com/Kotto01/tesseract-ind/main/updates.sh --output updates.sh && sh updates.sh
 #!/bin/bash
 
+echo "\n"
 teleport version
-read -p "Upgrade teleport? y/n" teleupdate
+read -p "\nUpgrade by major version? (y) " teleupdate
 
 if [ "$teleupdate" = "y" ]; then
-  echo "Upgrading teleport binary..."
+  echo "\nUpgrading teleport binary...\n"
   curl https://goteleport.com/static/install.sh | bash -s 13.3.7
-fi
+else
+  echo "\nSkipping teleport upgrade...\n"
 
 apt update
 apt upgrade -y
