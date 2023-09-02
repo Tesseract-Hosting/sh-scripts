@@ -1,3 +1,4 @@
+# curl https://raw.githubusercontent.com/Kotto01/tesseract-ind/main/updates.sh --output updates.sh && sh updates.sh
 #!/bin/bash
 
 teleport version
