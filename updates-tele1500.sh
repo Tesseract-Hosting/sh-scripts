@@ -14,4 +14,4 @@ else
 fi
 
 apt update
-apt upgrade -y
+apt dist-upgrade -y
